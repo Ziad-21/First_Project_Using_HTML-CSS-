@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+color for the header #f73a4c;
+color for the the page #1f2324;
+#1f2324;=>for first header
+another color for the the page #131822 ;
+*/
+body {
+  font-family: "Inter", sans-serif;
+  /* height: 4000px; */
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #212529;
+  overflow: auto;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+.list {
+  list-style-type: none;
+  float: right;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+.list li {
+  display: inline-block;
+  padding-left: 19px;
+}
+.logo {
+  width: 20%;
+  height: 70px;
+  background-color: #f73a4c;
+  float: left;
+  text-align: center;
+}
+.logo span {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  line-height: 66px;
+}
+.list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  transition: 0.3s;
+  /* transition: color 0.3s ease; */
+  text-transform: uppercase;
+}
+.list li a:hover {
+  color: #f73a4c;
+  padding: 8px 16px;
+}
+.MadMax {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/Madmax.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 70px;
+}
+.MadMax .font {
+  text-align: center;
+  color: #fff;
+  margin-top: 150px;
+  text-transform: capitalize;
+}
+.MadMax .font h2 {
+  font-size: 38px;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+.MadMax .font p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 45px;
+}
+.buttons_of_mad {
+  width: 500px;
+  height: 250px;
+  margin: auto;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.buttons_of_mad .first_button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 190px;
+  height: 65px;
+  border: 1px solid #f73a4c;
+  border-radius: 30px;
+  background-color: #f73a4c;
+  margin-left: 10px;
+}
+
+.buttons_of_mad .first_button:hover {
+  background-color: rgba(247, 58, 76, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buttons_of_mad .modify {
+  border: 1px solid #fff;
+  background-color: rgba(247, 58, 76, 0);
+}
+.buttons_of_mad .modify:hover {
+  border: 1px solid #f73a4c;
+  transition: 0.5;
+  background-color: #f73a4c;
+}
+.horizontal_line {
+  width: 100%;
+  height: 2px;
+  background: rgba(149, 67, 5, 0.7);
+}
+/* -------------START OF 2ND SECTION------------ */
+.emptydiv {
+  width: 70px;
+  height: 3px;
+  background-color: chocolate;
+  margin: auto;
+  margin-top: 10px;
+}
+.DownloadOptionsParent {
+  width: 100%;
+  background-color: #131822;
+}
+.subDownloadsParent {
+  width: 90%;
+  margin: auto;
+  background-color: #212529;
+  overflow: auto;
+  height: 400px;
+}
+.FontOFHeader {
+  color: #fff;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 900;
+  text-transform: capitalize;
+  padding-top: 15px;
+}
+.ChildsOfDownloads {
+  width: 25%;
+  height: 250px;
+  background-color: #131822;
+  float: left;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 25px;
+  border: 2px solid #000000;
+  margin-top: 25px;
+  border-radius: 25px;
+  padding-top: 15px;
+  position: relative;
+}
+.ChildsOfDownloads h2 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 900;
+}
+.ChildsOfDownloads p {
+  padding-top: 25px;
+}
+.ChildsOfDownloads button {
+  transition: 0.4s;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 170px;
+  height: 45px;
+  border: 1px solid #f73a4c;
+  border-radius: 30px;
+  background-color: #f73a4c;
+  margin-top: 25px;
+}
+.icon1 {
+  font-size: 35px;
+  color: #f73a4c;
+}
+.ChildsOfDownloads .DownloadButton:hover {
+  background-color: rgba(247, 58, 76, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ChildsOfDownloads::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: " ";
+  top: 0;
+  left: 0;
+  background-color: #f73a4c;
+  opacity: 0;
+  transition: 0.6s;
+  border-radius: 25px;
+}
+.ChildsOfDownloads:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.ChildsOfDownloads::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: " ";
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 25px;
+  transition: 0.6s;
+  background-color: #f73a4c;
+}
+.ChildsOfDownloads:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.ChildsOfDownloads:hover h2 {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+}
+/* //////////////START OF 3TH SECTION ///////// */
+.ShowMoviesParent {
+  width: 100%;
+  background-color: #131822;
+}
+.HeaderOFMovies {
+  font-size: 22px;
+  font-weight: 900;
+  padding-top: 15px;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+}
+.subMoviesShow {
+  width: 90%;
+  background-color: #212529;
+  margin: auto;
+  overflow: auto;
+}
+.movie {
+  width: 28%;
+  height: 415px;
+  cursor: pointer;
+  background-image: url(../moviesImages/The-Godfather-Poster-4-400x600.png);
+  background-position: center;
+  background-size: 320px 400px;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 55px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.x1 {
+  background-image: url(../moviesImages/Godfather-part-2-400x600.jpg);
+}
+.x2 {
+  background-image: url(../moviesImages/goodfellas_xlg-400x600.jpg);
+}
+.x3 {
+  background-image: url(../moviesImages/Fight-Club_poster_goldposter_com_8-400x600.jpg);
+}
+.x4 {
+  background-image: url(../moviesImages/lord_of_the_rings_the_return_of_the_king_ver7_xlg-400x600.jpg);
+}
+.x5 {
+  background-image: url(../moviesImages/shawshank_redemption_ver2-400x600.jpg);
+}
+.about {
+  font-size: 19px;
+  color: white;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 290px;
+  padding-left: 30px;
+}
+.cast {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: capitalize;
+  /* opacity: 0; */
+  text-align: center;
+  /* transition: 0.4s; */
+}
+
+.iconformovie {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #f73a4c;
+  font-size: 25px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  left: 125px;
+}
+
+.bigmovie {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.6s;
+}
+.movie:hover .bigmovie {
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  visibility: visible;
+}
+
+/* //////////FOURTH SECTION END /////////////// */
+.grandSummary {
+  width: 100%;
+  /* height: 60%vh; */
+  background-color: #131822;
+  text-align: center;
+}
+.fontsummary {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
+.parentSummary {
+  width: 90%;
+  overflow: auto;
+  margin: auto;
+  background-color: #212529;
+  border-radius: 10px;
+}
+
+.subSummary {
+  position: relative;
+  width: 29%;
+  height: 250px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #131822;
+  border: 2px solid #000000;
+  float: left;
+  text-align: left;
+  margin: 25px 25px;
+  font-size: 18px;
+  font-weight: 100;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    Helvetica, sans-serif;
+}
+.subSummary span {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.iconSummary {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #f73a4c;
+}
+.subSummary::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: " ";
+  top: 0;
+  left: 0;
+  background-color: #e2e2e2;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.subSummary:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+/*----------- FIFTH START ----------------*/
+.grandTalking {
+  width: 100%;
+  height: auto;
+  background-color: #131822;
+}
+.talkingParent {
+  width: 95%;
+  height: auto;
+  background-color: #212529;
+  margin: auto;
+  overflow: auto;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+.talking {
+  margin: 10px 30;
+}
+.editfont {
+  padding-left: 20px;
+}
+.subTalking {
+  width: 49%;
+  background-color: #212529;
+  /* border: 1px solid #000000; */
+  float: left;
+  padding-left: 10px;
+  margin: 25px 30px;
+}
+.deniro {
+  color: #fff;
+  font-size: 19px;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.subTalkingIMG {
+  width: 35%;
+  float: right;
+  /* border:1px solid black; */
+  /* outline: 2px solid #fff; */
+  /* outline-offset: 1px; */
+  margin-right: 35px;
+  border-radius: 35px;
+}
+.subTalkingIMG img {
+  width: 100%;
+  border: 1px solid black;
+  outline: 2px solid #fff;
+  outline-offset: 1px;
+  height: auto;
+  border-radius: 35px;
+}
+.iconsfortalk {
+  width: 750px;
+  height: 300px;
+  margin-top: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 35px;
+}
+.iconsfortalk ol {
+  font-size: 19px;
+  list-style-type: upper-roman;
+  font-weight: 500;
+}
+.iconsfortalk span {
+  font-size: 23px;
+  list-style-type: upper-roman;
+  font-weight: 800;
+}
+.bullets {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.spanbullets {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.spanbullets:hover {
+  background-color: #f73a4c;
+}
+.b1 {
+  background-color: #f73a4c;
+}
+/* start of 6th section */
+
+.GrandCover {
+  width: 100%;
+  height: 350px;
+  background-image: url(../moviesImages/coverrrr.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.parentCover {
+  overflow: auto;
+}
+.subCover {
+  width: 22%;
+  float: left;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 120px;
+  margin-left: 25px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 45px;
+}
+.iconcover {
+  color: #f73a4c;
+}
+/* ////// start 7th SECTION */
+.PricingGrand {
+  width: 100%;
+  height: 700px;
+  background-color: #131822;
+  overflow: auto;
+  /* position: relative; */
+}
+.PricingParent {
+  width: 90%;
+  height: 600px;
+  margin: auto;
+  background-color: #212529;
+  margin-top: 45px;
+  overflow: auto;
+}
+.subandcateg {
+  margin-top: 35px;
+}
+.PricingHeading {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 170px;
+  padding-top: 40px;
+}
+.priceHeader {
+  font-size: 23px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+.spanprice {
+  display: inline-block;
+  line-height: 30px;
+}
+.emptydivprice {
+  width: 100px;
+  height: 3px;
+  background-color: #f73a4c;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.iconPrice {
+  color: #f73a4c;
+  font-size: 21px;
+}
+
+.SubPrice {
+  position: relative;
+  width: 320px;
+  height: 250px;
+  background-color: #131822;
+  float: left;
+  margin-right: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.subCategoryPrice {
+  width: 320px;
+  height: 25px;
+  background-color: #f73a4c;
+  background-color: rgba(247, 58, 76, 0.6);
+  text-align: center;
+  color: #fff;
+  font-size: 19px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  margin-left: 50px;
+}
+.subpricefirst {
+  text-align: left;
+  width: 100px;
+  height: auto;
+  background-color: blueviolet;
+  padding-left: 70px;
+}
+.subPriceIcon {
+  font-size: 20px;
+  background-color: #f73a4c;
+  /* border-radius: 50%; */
+  color: #fff;
+}
+.premspan {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 400;
+}
+.editprice {
+  display: inline-block;
+  padding-left: 22px;
+  padding-top: 5px;
+}
+.listPrice {
+  font-size: 15px;
+  font-weight: 800px;
+  color: #fff;
+  padding-left: 25px;
+  padding-top: 5px;
+  line-height: 30px;
+  /* list-style-type: circle; */
+  color: #f73a4c;
+}
+.listPrice li span {
+  color: fff;
+}
+.pricebuy {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #f73a4c;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  font-weight: 800;
+  margin-left: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.pricebuy:hover {
+  background-color: rgba(247, 58, 76, 0.5);
+  font-weight: 300;
+}
+
+.x22 {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: -25px;
+}
+.x33 {
+  position: absolute;
+  margin-left: 850px;
+  margin-top: -25px;
+}
+.SubPrice::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: #ebdcdc;
+  opacity: 0;
+  transition: 0.9s;
+}
+.SubPrice:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+/* //////////end of 7 th section /////////// */
+.grandPhoto {
+  width: 100%;
+  height: 60vh;
+  background-image: url(../moviesImages/movienigth.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlayPhoto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6 );
+}
+.subPhoto {
+  color: #ffffff    ;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  float: left;
+  margin-left: 100px;
+  margin-top: 70px;
+/* line-height: 50px; */
+}
+.danielImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.subPhoto p {
+  line-height: 35px;
+  padding-left: 125px;
+}
+.subPhoto span{
+font-weight: 600;
+  font-size: 13px;
+  line-height: 30px;
+}
+/* ////////////////end of 9th section /////////////// */
+
+
+

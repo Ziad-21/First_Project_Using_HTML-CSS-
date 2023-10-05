@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.back_logo {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/firstSection.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.foredit {
+  float: left;
+}
+.selectmenu {
+  margin-left: 600px;
+  margin-top: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 9px;
+}
+select {
+  width: 150px;
+  height: 35px;
+  font-weight: 900;
+  background: rgb(0 0 0 / 40%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+select option {
+  color: #fff;
+}
+.back_logo .Netflixlogo {
+  width: 150px;
+  margin-left: 100px;
+  padding-top: 20px;
+}
+.back_logo h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+.back_logo p {
+  font-size: 25px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  font-weight: 700;
+}
+.back_logo .email {
+  width: 400px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-left: 350px;
+  background: rgb(0 0 0 / 40%);
+}
+.back_logo .email::placeholder {
+  color: #fff;
+}
+button {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 6px;
+  width: 250px;
+  height: 65px;
+  font-size: 23px;
+  font-weight: 600;
+  margin-left: 25px;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.back_logo .newbtn {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.back_logo .newanchor {
+  text-decoration: none;
+  color: #fff;
+}
+.parent {
+  overflow: auto;
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  position: relative;
+}
+.fonts {
+  width: 700px;
+  height: 388px;
+  background-color: black;
+  color: #fff;
+  float: left;
+  font-family: "Poppins", sans-serif;
+}
+.fonts h2 {
+  font-size: 35px;
+  padding-left: 150px;
+  padding-top: 50px;
+}
+.fonts p {
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 150px;
+  padding-top: 50px;
+}
+.imgclass {
+  width: auto;
+  height: 388px;
+  background-color: black;
+  float: left;
+}
+.imgclass img {
+  width: 400px;
+  height: 400px;
+  padding-top: 80px;
+
+  position: absolute;
+}
+.myvid .myvideo {
+  width: 450px;
+  height: 210px;
+  position: absolute;
+  margin-top: 90px;
+  margin-left: -20px;
+}
+.horizanalline {
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.617);
+}
+.parentofthirdpart {
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+}
+.thirdpartimg {
+  width: 450px;
+  height: 400px;
+  float: left;
+}
+.thirdpartimg img {
+  width: 240px;
+  margin-left: 200px;
+  height: auto;
+  margin-top: 40px;
+}
+.thirdFont {
+  width: auto;
+  height: auto;
+  text-align: center;
+  float: right;
+  margin-right: 250px;
+}
+
+.thirdFont .fontofthird {
+  color: #fff;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  padding-top: 100px;
+  line-height: 50px;
+}
+.thirdFont .thirdspan {
+  color: #fff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  line-height: 35px;
+}
+.icon1 {
+  color: red;
+  font-size: 35px;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+.fourthparent {
+  overflow: auto;
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  position: relative;
+}
+.fourthfonts {
+  width: 700px;
+  height: 388px;
+  background-color: black;
+  color: #fff;
+  float: left;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+}
+.fourthfonts h2 {
+  font-size: 50px;
+  padding-left: 150px;
+  padding-top: 50px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+.fourthfonts p {
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 150px;
+  padding-top: 35px;
+  font-family: "Poppins", sans-serif;
+}
+.fourthimgclass {
+  width: auto;
+  height: 350px;
+  margin-top: -50px;
+  background-color: black;
+  float: left;
+}
+.fourthimgclass img {
+  width: 500px;
+  height: 500px;
+  padding-top: 80px;
+  z-index: 1;
+  position: absolute;
+}
+
+.secondmyvid .secondmyvideo {
+  width: 300px;
+  height: 265px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.lastdiv {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+overflow: auto;
+}
+.lastimg{
+
+float: left;
+
+}
+.lastdiv .lastimg img{
+  width: 500px;
+  height: 300px;
+  margin-left: 150px;
+margin-top: 50px ;
+  
+}
+.lastfont{
+  float: left;
+}
+.lastfont h2{
+  font-size: 50px;
+  padding-left: 100px;
+  padding-top: 50px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+
+}
+.lastfont p{
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 100px;
+  padding-top: 30px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+
+}
+
